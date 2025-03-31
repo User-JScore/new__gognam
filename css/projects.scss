@@ -1,0 +1,45 @@
+@import "_var.scss";
+
+.container__projects__main {
+  &__portfolio {
+    width: 100%;
+    position: relative;
+
+    &__nav {
+      width: 25%;
+      //   min-width: 200px;
+      height: calc(100% - 100px);
+      margin-top: 90px;
+      padding: 10px;
+      position: fixed;
+      border-right: 1px solid $backDark;
+
+      a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $backDark;
+      }
+    }
+
+    &__contentbox {
+      position: relative;
+      left: 25%;
+      width: 75%;
+      padding: 100px 5% 5% 5%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5%;
+
+      div {
+        width: calc(95% / 2);
+        height: 40vh;
+        background-image: url("../src/img/IMG_2113.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.container__projects__main__portfolio {
+  width: 100%;
+  position: relative;
+}
+.container__projects__main__portfolio__nav {
+  width: 25%;
+  height: calc(100% - 100px);
+  margin-top: 90px;
+  padding: 10px;
+  position: fixed;
+  border-right: 1px solid rgb(59, 64, 87);
+}
+.container__projects__main__portfolio__nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(59, 64, 87);
+}
+.container__projects__main__portfolio__contentbox {
+  position: relative;
+  left: 25%;
+  width: 75%;
+  padding: 100px 5% 5% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.container__projects__main__portfolio__contentbox div {
+  width: 47.5%;
+  height: 40vh;
+  background-image: url("../src/img/IMG_2113.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+}/*# sourceMappingURL=projects.css.map */

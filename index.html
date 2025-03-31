@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Studio Gongam</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="container__header">
+        <section class="container__header__logobox"></section>
+
+        <section class="container__header__menu">
+          <ul>
+            <li>
+              <a href="#home" class="container__header__menu__item">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="container__header__menu__item"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="projects.html" class="container__header__menu__item"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="container__header__menu__item"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="container__header__mediabox">
+          <article class="container__header__mediabox__insta">
+            <svg viewBox="0 0 24 24" fill="none">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                  stroke="rgb(255, 248, 235)"
+                  stroke-width="2"
+                  id="SVGRepo_iconCarrier"
+                ></path>
+                <circle
+                  id="SVGRepo_iconCarrier"
+                  cx="16.5"
+                  cy="7.5"
+                  r="1.5"
+                  fill="rgb(255, 248, 235)"
+                ></circle>
+                <circle
+                  id="SVGRepo_iconCarrier"
+                  cx="12"
+                  cy="12"
+                  r="3"
+                  stroke="rgb(255, 248, 235)"
+                  stroke-width="2"
+                ></circle>
+              </g>
+            </svg>
+          </article>
+
+          <article class="container__header__mediabox__naver">
+            <svg
+              id="SVGRepo_iconCarrier"
+              viewBox="0 0 512 512"
+              version="1.1"
+              fill="rgb(255, 248, 235)"
+            >
+              <g id="SVGRepo_iconCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_iconCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="SVGRepo_iconCarrier"
+                  fill="rgb(255, 248, 235)"
+                  d="M9 32V480H181.366V255.862L331.358 480H504V32H331.358V255.862L181.366 32H9Z"
+                ></path>
+              </g>
+            </svg>
+          </article>
+        </section>
+      </header>
+
+      <aside class="container__aside">
+        <svg viewBox="0 0 24 24" fill="none">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M13.5 2C13.5 2 15.8335 2.21213 18.8033 5.18198C21.7731 8.15183 21.9853 10.4853 21.9853 10.4853"
+              stroke="rgb(255, 248, 235)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829"
+              stroke="rgb(255, 248, 235)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M15.1007 15.0272L14.5569 14.5107L15.1007 15.0272ZM15.5562 14.5477L16.1 15.0642H16.1L15.5562 14.5477ZM17.9728 14.2123L17.5987 14.8623H17.5987L17.9728 14.2123ZM19.8833 15.312L19.5092 15.962L19.8833 15.312ZM20.4217 18.7584L20.9655 19.2749L20.4217 18.7584ZM19.0011 20.254L18.4573 19.7375L19.0011 20.254ZM17.6763 20.9631L17.7499 21.7095L17.6763 20.9631ZM7.81536 16.4752L8.35915 15.9587L7.81536 16.4752ZM3.00289 6.96594L2.25397 7.00613L2.25397 7.00613L3.00289 6.96594ZM9.47752 8.50311L10.0213 9.01963H10.0213L9.47752 8.50311ZM9.63424 5.6931L10.2466 5.26012L9.63424 5.6931ZM8.37326 3.90961L7.76086 4.3426V4.3426L8.37326 3.90961ZM5.26145 3.60864L5.80524 4.12516L5.26145 3.60864ZM3.69185 5.26114L3.14806 4.74462L3.14806 4.74462L3.69185 5.26114ZM11.0631 13.0559L11.6069 12.5394L11.0631 13.0559ZM15.6445 15.5437L16.1 15.0642L15.0124 14.0312L14.5569 14.5107L15.6445 15.5437ZM17.5987 14.8623L19.5092 15.962L20.2575 14.662L18.347 13.5623L17.5987 14.8623ZM19.8779 18.2419L18.4573 19.7375L19.5449 20.7705L20.9655 19.2749L19.8779 18.2419ZM17.6026 20.2167C16.1676 20.3584 12.4233 20.2375 8.35915 15.9587L7.27157 16.9917C11.7009 21.655 15.9261 21.8895 17.7499 21.7095L17.6026 20.2167ZM8.35915 15.9587C4.48303 11.8778 3.83285 8.43556 3.75181 6.92574L2.25397 7.00613C2.35322 8.85536 3.1384 12.6403 7.27157 16.9917L8.35915 15.9587ZM9.7345 9.32159L10.0213 9.01963L8.93372 7.9866L8.64691 8.28856L9.7345 9.32159ZM10.2466 5.26012L8.98565 3.47663L7.76086 4.3426L9.02185 6.12608L10.2466 5.26012ZM4.71766 3.09213L3.14806 4.74462L4.23564 5.77765L5.80524 4.12516L4.71766 3.09213ZM9.1907 8.80507C8.64691 8.28856 8.64622 8.28929 8.64552 8.29002C8.64528 8.29028 8.64458 8.29102 8.64411 8.29152C8.64316 8.29254 8.64219 8.29357 8.64121 8.29463C8.63924 8.29675 8.6372 8.29896 8.6351 8.30127C8.63091 8.30588 8.62646 8.31087 8.62178 8.31625C8.61243 8.32701 8.60215 8.33931 8.59116 8.3532C8.56918 8.38098 8.54431 8.41512 8.51822 8.45588C8.46591 8.53764 8.40917 8.64531 8.36112 8.78033C8.26342 9.0549 8.21018 9.4185 8.27671 9.87257C8.40742 10.7647 8.99198 11.9644 10.5193 13.5724L11.6069 12.5394C10.1793 11.0363 9.82761 10.1106 9.76086 9.65511C9.72866 9.43536 9.76138 9.31957 9.77432 9.28321C9.78159 9.26277 9.78635 9.25709 9.78169 9.26437C9.77944 9.26789 9.77494 9.27451 9.76738 9.28407C9.76359 9.28885 9.75904 9.29437 9.7536 9.30063C9.75088 9.30375 9.74793 9.30706 9.74476 9.31056C9.74317 9.31231 9.74152 9.3141 9.73981 9.31594C9.73896 9.31686 9.73809 9.31779 9.7372 9.31873C9.73676 9.3192 9.73608 9.31992 9.73586 9.32015C9.73518 9.32087 9.7345 9.32159 9.1907 8.80507ZM10.5193 13.5724C12.0422 15.1757 13.1923 15.806 14.0698 15.9485C14.5201 16.0216 14.8846 15.9632 15.1606 15.8544C15.2955 15.8012 15.4022 15.7387 15.4823 15.6819C15.5223 15.6535 15.5556 15.6266 15.5824 15.6031C15.5959 15.5913 15.6077 15.5803 15.618 15.5703C15.6232 15.5654 15.628 15.5606 15.6324 15.5562C15.6346 15.554 15.6367 15.5518 15.6387 15.5497C15.6397 15.5487 15.6407 15.5477 15.6417 15.5467C15.6422 15.5462 15.6429 15.5454 15.6431 15.5452C15.6438 15.5444 15.6445 15.5437 15.1007 15.0272C14.5569 14.5107 14.5576 14.51 14.5583 14.5093C14.5585 14.509 14.5592 14.5083 14.5596 14.5078C14.5605 14.5069 14.5614 14.506 14.5623 14.5051C14.5641 14.5033 14.5658 14.5015 14.5674 14.4998C14.5708 14.4965 14.574 14.4933 14.577 14.4904C14.583 14.4846 14.5885 14.4796 14.5933 14.4754C14.6028 14.467 14.6099 14.4616 14.6145 14.4584C14.6239 14.4517 14.6229 14.454 14.6102 14.459C14.5909 14.4666 14.5 14.4987 14.3103 14.4679C13.9077 14.4025 13.0391 14.0472 11.6069 12.5394L10.5193 13.5724ZM8.98565 3.47663C7.97206 2.04305 5.94384 1.80119 4.71766 3.09213L5.80524 4.12516C6.32808 3.57471 7.24851 3.61795 7.76086 4.3426L8.98565 3.47663ZM3.75181 6.92574C3.73038 6.52644 3.90425 6.12654 4.23564 5.77765L3.14806 4.74462C2.61221 5.30877 2.20493 6.09246 2.25397 7.00613L3.75181 6.92574ZM18.4573 19.7375C18.1783 20.0313 17.8864 20.1887 17.6026 20.2167L17.7499 21.7095C18.497 21.6357 19.1016 21.2373 19.5449 20.7705L18.4573 19.7375ZM10.0213 9.01963C10.9889 8.00095 11.0574 6.40678 10.2466 5.26012L9.02185 6.12608C9.44399 6.72315 9.37926 7.51753 8.93372 7.9866L10.0213 9.01963ZM19.5092 15.962C20.33 16.4345 20.4907 17.5968 19.8779 18.2419L20.9655 19.2749C22.2704 17.901 21.8904 15.6019 20.2575 14.662L19.5092 15.962ZM16.1 15.0642C16.4854 14.6584 17.086 14.5672 17.5987 14.8623L18.347 13.5623C17.2485 12.93 15.8861 13.1113 15.0124 14.0312L16.1 15.0642Z"
+              fill="rgb(255, 248, 235)"
+            ></path>
+          </g>
+        </svg>
+      </aside>
+
+      <main class="container__main">
+        <section class="container__main__home" id="home">
+          <article class="container__main__home__titlebox">
+            <h1 id="design">DESIGN STUDIO</h1>
+            <h1 id="gongam">GONGAM</h1>
+          </article>
+        </section>
+
+        <section class="container__main__about" id="about">
+          <article class="container__main__about__titlebox">
+            <h1 class="__about__title_1">ABOUT US</h1>
+            <h1 class="__about__title_2">AND OUR STUDIO</h1>
+          </article>
+
+          <article class="container__main__about__contentbox">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              quae eligendi, animi, iusto beatae amet reiciendis totam tempore
+              molestias, architecto minus ratione. Delectus consequuntur,
+              mollitia quidem quia inventore repellat dolores?
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              rerum incidunt maxime assumenda hic sed nesciunt exercitationem
+              asperiores, magnam molestiae eum. Alias modi molestias suscipit
+              aliquid reiciendis temporibus quaerat velit.
+            </p>
+          </article>
+        </section>
+
+        <section class="container__main__projects">
+          <article class="container__main__projects__swiper swiper-container">
+            <div
+              class="container__main__projects__swiper__wrapper swiper-wrapper"
+            >
+              <div
+                class="container__main__projects__swiper__wrapper__slide swiper-slide"
+                id="slide-1"
+              >
+                <div
+                  class="container__main__projects__swiper__wrapper__slide__titlebox"
+                >
+                  <h1>Object name</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio reiciendis tenetur et ut cum laborum necessitatibus
+                    sit harum totam! Dolore animi, vero autem temporibus
+                    officiis minima blanditiis porro eaque esse.
+                  </p>
+
+                  <button>
+                    <svg viewBox="0 0 48 48" fill="rgba(255, 248, 235, 1)">
+                      <g stroke-width="0"></g>
+                      <g stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g>
+                        <defs>
+                          <style>
+                            .a {
+                              fill: none;
+                              stroke: rgba(255, 248, 235, 1);
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                            }
+                          </style>
+                        </defs>
+                        <path
+                          class="a"
+                          d="M21.4429,29.8271v5.487c-2.1129-1.22-9.03-1.8194-5.5713,2.2735S20.9888,43.5,22.3521,43.5H33.1536c2.0465,0,1.9325-5.7983,2.5016-7.6178s.5681-3.6388-1.4784-4.434c-1.3107-.51-2.912-1.7609-4.7235-2.5977"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M16.61,17.2924a7.3908,7.3908,0,1,1,9.6077,7.014v3.73a7.7456,7.7456,0,0,1,3.2353.8131,12.7724,12.7724,0,1,0-8.0124.9766V24.2a7.3725,7.3725,0,0,1-4.8316-6.9088Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M31.3917,17.2924a7.3907,7.3907,0,1,0-9.95,6.9089v-5.146a2.394,2.394,0,1,1,4.7751,0v5.2521a7.3658,7.3658,0,0,0,5.1737-7.014Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M26.218,24.3074V19.0553a2.394,2.394,0,1,0-4.7751,0v5.146"
+                        ></path>
+                      </g>
+                    </svg>
+                    <h2>Tap to view</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="container__main__projects__swiper__wrapper__slide swiper-slide"
+                id="slide-2"
+              >
+                <div
+                  class="container__main__projects__swiper__wrapper__slide__titlebox"
+                >
+                  <h1>Object name</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio reiciendis tenetur et ut cum laborum necessitatibus
+                    sit harum totam! Dolore animi, vero autem temporibus
+                    officiis minima blanditiis porro eaque esse.
+                  </p>
+
+                  <button>
+                    <svg viewBox="0 0 48 48" fill="rgba(255, 248, 235, 1)">
+                      <g stroke-width="0"></g>
+                      <g stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g>
+                        <defs>
+                          <style>
+                            .a {
+                              fill: none;
+                              stroke: rgba(255, 248, 235, 1);
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                            }
+                          </style>
+                        </defs>
+                        <path
+                          class="a"
+                          d="M21.4429,29.8271v5.487c-2.1129-1.22-9.03-1.8194-5.5713,2.2735S20.9888,43.5,22.3521,43.5H33.1536c2.0465,0,1.9325-5.7983,2.5016-7.6178s.5681-3.6388-1.4784-4.434c-1.3107-.51-2.912-1.7609-4.7235-2.5977"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M16.61,17.2924a7.3908,7.3908,0,1,1,9.6077,7.014v3.73a7.7456,7.7456,0,0,1,3.2353.8131,12.7724,12.7724,0,1,0-8.0124.9766V24.2a7.3725,7.3725,0,0,1-4.8316-6.9088Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M31.3917,17.2924a7.3907,7.3907,0,1,0-9.95,6.9089v-5.146a2.394,2.394,0,1,1,4.7751,0v5.2521a7.3658,7.3658,0,0,0,5.1737-7.014Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M26.218,24.3074V19.0553a2.394,2.394,0,1,0-4.7751,0v5.146"
+                        ></path>
+                      </g>
+                    </svg>
+                    <h2>Tap to view</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="container__main__projects__swiper__wrapper__slide swiper-slide"
+                id="slide-3"
+              >
+                <div
+                  class="container__main__projects__swiper__wrapper__slide__titlebox"
+                >
+                  <h1>Object name</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio reiciendis tenetur et ut cum laborum necessitatibus
+                    sit harum totam! Dolore animi, vero autem temporibus
+                    officiis minima blanditiis porro eaque esse.
+                  </p>
+
+                  <button>
+                    <svg viewBox="0 0 48 48" fill="rgba(255, 248, 235, 1)">
+                      <g stroke-width="0"></g>
+                      <g stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g>
+                        <defs>
+                          <style>
+                            .a {
+                              fill: none;
+                              stroke: rgba(255, 248, 235, 1);
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                            }
+                          </style>
+                        </defs>
+                        <path
+                          class="a"
+                          d="M21.4429,29.8271v5.487c-2.1129-1.22-9.03-1.8194-5.5713,2.2735S20.9888,43.5,22.3521,43.5H33.1536c2.0465,0,1.9325-5.7983,2.5016-7.6178s.5681-3.6388-1.4784-4.434c-1.3107-.51-2.912-1.7609-4.7235-2.5977"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M16.61,17.2924a7.3908,7.3908,0,1,1,9.6077,7.014v3.73a7.7456,7.7456,0,0,1,3.2353.8131,12.7724,12.7724,0,1,0-8.0124.9766V24.2a7.3725,7.3725,0,0,1-4.8316-6.9088Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M31.3917,17.2924a7.3907,7.3907,0,1,0-9.95,6.9089v-5.146a2.394,2.394,0,1,1,4.7751,0v5.2521a7.3658,7.3658,0,0,0,5.1737-7.014Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M26.218,24.3074V19.0553a2.394,2.394,0,1,0-4.7751,0v5.146"
+                        ></path>
+                      </g>
+                    </svg>
+                    <h2>Tap to view</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="container__main__projects__swiper__wrapper__slide swiper-slide"
+                id="slide-4"
+              >
+                <div
+                  class="container__main__projects__swiper__wrapper__slide__titlebox"
+                >
+                  <h1>Object name</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio reiciendis tenetur et ut cum laborum necessitatibus
+                    sit harum totam! Dolore animi, vero autem temporibus
+                    officiis minima blanditiis porro eaque esse.
+                  </p>
+
+                  <button>
+                    <svg viewBox="0 0 48 48" fill="rgba(255, 248, 235, 1)">
+                      <g stroke-width="0"></g>
+                      <g stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g>
+                        <defs>
+                          <style>
+                            .a {
+                              fill: none;
+                              stroke: rgba(255, 248, 235, 1);
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                            }
+                          </style>
+                        </defs>
+                        <path
+                          class="a"
+                          d="M21.4429,29.8271v5.487c-2.1129-1.22-9.03-1.8194-5.5713,2.2735S20.9888,43.5,22.3521,43.5H33.1536c2.0465,0,1.9325-5.7983,2.5016-7.6178s.5681-3.6388-1.4784-4.434c-1.3107-.51-2.912-1.7609-4.7235-2.5977"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M16.61,17.2924a7.3908,7.3908,0,1,1,9.6077,7.014v3.73a7.7456,7.7456,0,0,1,3.2353.8131,12.7724,12.7724,0,1,0-8.0124.9766V24.2a7.3725,7.3725,0,0,1-4.8316-6.9088Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M31.3917,17.2924a7.3907,7.3907,0,1,0-9.95,6.9089v-5.146a2.394,2.394,0,1,1,4.7751,0v5.2521a7.3658,7.3658,0,0,0,5.1737-7.014Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M26.218,24.3074V19.0553a2.394,2.394,0,1,0-4.7751,0v5.146"
+                        ></path>
+                      </g>
+                    </svg>
+                    <h2>Tap to view</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="container__main__projects__swiper__wrapper__slide swiper-slide"
+                id="slide-5"
+              >
+                <div
+                  class="container__main__projects__swiper__wrapper__slide__titlebox"
+                >
+                  <h1>Object name</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio reiciendis tenetur et ut cum laborum necessitatibus
+                    sit harum totam! Dolore animi, vero autem temporibus
+                    officiis minima blanditiis porro eaque esse.
+                  </p>
+
+                  <button>
+                    <svg viewBox="0 0 48 48" fill="rgba(255, 248, 235, 1)">
+                      <g stroke-width="0"></g>
+                      <g stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g>
+                        <defs>
+                          <style>
+                            .a {
+                              fill: none;
+                              stroke: rgba(255, 248, 235, 1);
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                            }
+                          </style>
+                        </defs>
+                        <path
+                          class="a"
+                          d="M21.4429,29.8271v5.487c-2.1129-1.22-9.03-1.8194-5.5713,2.2735S20.9888,43.5,22.3521,43.5H33.1536c2.0465,0,1.9325-5.7983,2.5016-7.6178s.5681-3.6388-1.4784-4.434c-1.3107-.51-2.912-1.7609-4.7235-2.5977"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M16.61,17.2924a7.3908,7.3908,0,1,1,9.6077,7.014v3.73a7.7456,7.7456,0,0,1,3.2353.8131,12.7724,12.7724,0,1,0-8.0124.9766V24.2a7.3725,7.3725,0,0,1-4.8316-6.9088Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M31.3917,17.2924a7.3907,7.3907,0,1,0-9.95,6.9089v-5.146a2.394,2.394,0,1,1,4.7751,0v5.2521a7.3658,7.3658,0,0,0,5.1737-7.014Z"
+                        ></path>
+                        <path
+                          class="a"
+                          d="M26.218,24.3074V19.0553a2.394,2.394,0,1,0-4.7751,0v5.146"
+                        ></path>
+                      </g>
+                    </svg>
+                    <h2>Tap to view</h2>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="container__main__projects__swiper__button-prev swiper-button-prev"
+            ></div>
+            <div
+              class="container__main__projects__swiper__button-next swiper-button-next"
+            ></div>
+            <div
+              class="container__main__projects__swiper-pagination swiper-pagination"
+            ></div>
+          </article>
+        </section>
+
+        <section class="container__main__contact">
+          <article class="container__main__contact__titlebox">
+            <h1 class="__contact__title_1">OUR CONTACTS</h1>
+            <h1 class="__contact__title_2">GET A CONSULTATION</h1>
+          </article>
+
+          <article class="container__main__contact__contentbox" id="contact">
+            <div class="__contact__form">
+              <div class="__contact__form__info">
+                <a href="tel:+821062928965">Tel: +82 10 62928965</a>
+                <a href="mailto:i-gonggam@naver.com"
+                  >E-mail: i-gonggam@naver.com</a
+                >
+
+                <div class="__contact__form__info__media">
+                  <div class="__contact__form__info__media__insta">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                          stroke="rgb(59, 64, 87)"
+                          stroke-width="2"
+                          id="SVGRepo_iconCarrier"
+                        ></path>
+                        <circle
+                          id="SVGRepo_iconCarrier"
+                          cx="16.5"
+                          cy="7.5"
+                          r="1.5"
+                          fill="rgb(59, 64, 87)"
+                        ></circle>
+                        <circle
+                          id="SVGRepo_iconCarrier"
+                          cx="12"
+                          cy="12"
+                          r="3"
+                          stroke="rgb(59, 64, 87)"
+                          stroke-width="2"
+                        ></circle>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="__contact__form__info__media__naver">
+                    <svg
+                      id="SVGRepo_iconCarrier"
+                      viewBox="0 0 512 512"
+                      version="1.1"
+                      fill="rgb(59, 64, 87)"
+                    >
+                      <g id="SVGRepo_iconCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_iconCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          id="SVGRepo_iconCarrier"
+                          fill="rgb(59, 64, 87)"
+                          d="M9 32V480H181.366V255.862L331.358 480H504V32H331.358V255.862L181.366 32H9Z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="__contact__form__box">
+                <h1>Back call</h1>
+
+                <form action="" method="get">
+                  <label>
+                    Name:
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Hon Gil Dong"
+                      required
+                    />
+                  </label>
+
+                  <label>
+                    Phone number:
+                    <input
+                      type="tel"
+                      name="tel"
+                      placeholder="+ 010 0000 0000"
+                      required
+                    />
+                  </label>
+                  <label>
+                    Comment:
+                    <textarea name="comment" placeholder="Comments"></textarea>
+                  </label>
+                  <button type="submit">Send</button>
+                </form>
+              </div> -->
+            </div>
+
+            <div class="__contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3008.4624728788926!2d127.0116538!3d37.5063292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1fe4178a3bb%3A0xe199cdd1127af726!2z7Iqk7Yqc65SU7Jik6rO16rCQ!5e1!3m2!1sko!2skz!4v1743142158719!5m2!1sko!2skz"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </article>
+        </section>
+
+        <section class="container__main__footer">
+          <article class="container__main__footer__logobox">
+            <h1>STUDIO</h1>
+            <h1>GONGAM</h1>
+          </article>
+
+          <article class="container__main__footer__menubox">
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+          </article>
+
+          <article class="container__main__footer__copy">
+            <p>&copy; 2025 Studio "13.05" All rights reserved.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/projectsSwiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+@import "_var.scss";
+
+.container__main {
+  &__home {
+    padding: 80px 10px 10px 10px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../src/img/IMG_2113.JPG");
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: home-background;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &__titlebox {
+      position: absolute;
+      top: 30%;
+      font-size: 3rem;
+      color: $backWhite;
+
+      #design {
+        line-height: 65%;
+      }
+
+      #gongam {
+        font-size: 5.7rem;
+        line-height: 65%;
+      }
+    }
+  }
+
+  &__about {
+    width: 100%;
+    height: 700px;
+    background-color: $backWhite;
+    position: relative;
+
+    &__titlebox {
+      position: absolute;
+      top: 20px;
+      left: calc(100% - 100px);
+      width: 660px;
+      height: 100px;
+      color: $backDarkTr;
+      transform: rotate(90deg) translateX(-100px);
+      transform-origin: bottom left;
+      opacity: 0.4;
+
+      .__about__title_1 {
+        text-align: start;
+        font-size: 5rem;
+      }
+
+      .__about__title_2 {
+        text-align: end;
+        font-size: 4rem;
+        line-height: 1%;
+      }
+    }
+
+    &__contentbox {
+      width: calc(100% - 130px);
+      height: 100%;
+      padding: 10px 0 10px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+        text-indent: 100px;
+        line-height: 180%;
+        color: $backDark;
+      }
+    }
+  }
+
+  &__projects {
+    width: 100%;
+    height: 90vh;
+    min-height: 600px;
+    max-height: 1100px;
+    background-image: url("../src/img/IMG_2121.JPG");
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: projects-background;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &__swiper {
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px) grayscale(0.5);
+      padding: 20px 0;
+
+      &__wrapper {
+        overflow-y: hidden !important;
+
+        &__slide {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          &__titlebox {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            padding: 10px;
+            position: relative;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            h1 {
+              color: $backDark;
+              font-size: 2rem;
+              font-weight: 600;
+              transition: color 0.3s;
+            }
+
+            p {
+              opacity: 0;
+              position: absolute;
+              top: 30%;
+              left: 10px;
+              width: calc(100% - 20px);
+              color: $backWhite;
+              font-size: 1.2rem;
+              text-align: justify;
+              text-indent: 50px;
+              transition: opacity 0.3s;
+            }
+
+            button {
+              position: absolute;
+              top: 50%;
+              left: calc(50% - 100px);
+              opacity: 0;
+              width: 200px;
+              height: 50px;
+              background-color: transparent;
+              border: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              animation-name: project-button;
+              animation-duration: 0.6s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+              transition: all 0.5s;
+
+              svg {
+                width: 70px;
+                .a {
+                  transition: all 0.3s linear 0.5s;
+                }
+              }
+
+              h2 {
+                color: $backWhite;
+                transition: color 0.3s linear 0.5s;
+              }
+            }
+
+            &:hover {
+              background-color: $backDarkTr;
+              backdrop-filter: blur(5px);
+
+              h1 {
+                color: $backWhite;
+              }
+
+              p {
+                opacity: 1;
+              }
+
+              button {
+                top: 80%;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        #slide-1 {
+          background-image: url("../src/img/IMG_2101.JPG");
+        }
+
+        #slide-2 {
+          background-image: url("../src/img/IMG_2102.JPG");
+        }
+
+        #slide-3 {
+          background-image: url("../src/img/IMG_2103\ \(1\).JPG");
+        }
+
+        #slide-4 {
+          background-image: url("../src/img/IMG_2104.JPG");
+        }
+
+        #slide-5 {
+          background-image: url("../src/img/IMG_2105.JPG");
+        }
+      }
+
+      .swiper-slide {
+        filter: grayscale(80) blur(5px);
+        transition: filter 0.5s;
+      }
+
+      .swiper-slide-active {
+        filter: grayscale(0);
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: $backWhiteTr;
+
+        &:hover,
+        &:active {
+          color: $backWhite;
+        }
+      }
+
+      .swiper-pagination-bullet {
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
+        background-color: $backWhiteTr;
+
+        &:hover,
+        &:active {
+          background-color: $backDark;
+        }
+
+        &-active {
+          background-color: $backWhite;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    width: 100%;
+    height: 700px;
+    background-color: $backWhite;
+    position: relative;
+    padding: 20px 20px 20px 140px;
+
+    &__titlebox {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      width: 660px;
+      height: 100px;
+      color: $backDarkTr;
+      transform: rotate(90deg) translateX(-100px);
+      transform-origin: bottom left;
+      opacity: 0.4;
+
+      .__contact__title_1 {
+        text-align: start;
+        font-size: 5rem;
+      }
+
+      .__contact__title_2 {
+        text-align: end;
+        font-size: 3rem;
+        line-height: 1%;
+      }
+    }
+
+    &__contentbox {
+      display: flex;
+
+      .__contact__form {
+        width: 40%;
+        height: 660px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &__info {
+          border: 2px solid $backDarkTr;
+          border-radius: 20px;
+          margin-right: 20px;
+          padding: 5px;
+          box-shadow: -10px 5px 10px $backDarkTr;
+          backdrop-filter: blur(10px);
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          gap: 10px;
+
+          a {
+            display: block;
+            color: $backDark;
+            text-decoration: none;
+            font-size: 1.2rem;
+          }
+
+          &__media {
+            display: flex;
+            gap: 30px;
+            &__insta,
+            &__naver {
+              width: 40px;
+              height: 40px;
+              cursor: pointer;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            &__naver {
+              width: 35px;
+            }
+          }
+        }
+
+        &__box {
+          display: flex;
+          flex-direction: column;
+          color: $backDark;
+          backdrop-filter: blur(10px);
+          border: 2px solid $backDarkTr;
+          border-radius: 20px;
+          margin-right: 20px;
+          padding: 5px;
+          height: 55%;
+          box-shadow: -10px 5px 10px $backDarkTr;
+
+          h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+          }
+
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            label {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              font-size: 1.1rem;
+
+              input,
+              textarea {
+                background-color: $backDarkTr;
+                color: $backWhite;
+                height: 25px;
+              }
+
+              textarea {
+                height: 60px;
+              }
+            }
+          }
+        }
+      }
+
+      .__contact__map {
+        width: 60%;
+        height: 660px;
+
+        iframe {
+          border-radius: 20px;
+          box-shadow: -10px 5px 10px $backDarkTr;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    height: 110px;
+    background-color: $backDark;
+    border-top: 1px solid $backWhite;
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+    &__logobox {
+      background-image: url("../src/logo.webp");
+      background-position: left center;
+      background-size: 30%;
+      background-repeat: no-repeat;
+      width: 30%;
+      height: 100%;
+      opacity: 0.5;
+
+      h1 {
+        color: $backWhite;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 70px;
+        line-height: 70%;
+        position: relative;
+        top: calc(50% - 1.5rem);
+      }
+    }
+
+    &__menubox {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      opacity: 0.5;
+
+      a {
+        color: $backWhite;
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+    }
+
+    &__copy {
+      position: absolute;
+      top: 90px;
+      left: calc(50% - 250px);
+      width: 500px;
+      height: 20px;
+      text-align: center;
+      color: $backWhite;
+      opacity: 0.5;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@keyframes home-background {
+  from {
+    background-position: left bottom;
+  }
+
+  to {
+    background-position: right;
+  }
+}
+
+@keyframes projects-background {
+  from {
+    background-position: left;
+  }
+
+  to {
+    background-position: right bottom;
+  }
+}
+
+@keyframes project-button {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
