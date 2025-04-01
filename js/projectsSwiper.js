@@ -12,10 +12,10 @@ let swiper = new Swiper(".container__main__projects__swiper", {
   mousewheel: true,
   keyboard: true,
   freeMode: true,
-  autoplay: {
-    delay: 3000,
-    // pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   // pauseOnMouseEnter: true,
+  // },
   slidesPerView: 1.4,
   centeredSlides: true,
   effect: "coverflow",
@@ -34,4 +34,14 @@ let swiper = new Swiper(".container__main__projects__swiper", {
       slidesPerView: 2.5,
     },
   },
+});
+
+const allSlides = document.querySelectorAll(
+  ".container__main__projects__swiper__wrapper__slide__titlebox"
+);
+
+allSlides.forEach((slide, count) => {
+  slide.addEventListener("click", () => {
+    window.open("projects.html", "_parent");
+  });
 });

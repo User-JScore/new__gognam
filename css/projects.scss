@@ -30,7 +30,7 @@
         transition: all 0.3s;
 
         &:hover {
-          color: aqua;
+          color: $active;
           font-size: 1.4rem;
         }
       }
@@ -54,7 +54,71 @@
         background-position: center;
         background-repeat: no-repeat;
         margin-bottom: 5%;
+        cursor: pointer;
+        transition: all 0.5s;
+        filter: grayscale(0.4);
+
+        &:hover {
+          filter: grayscale(0);
+          box-shadow: 0 0 20px $backDark;
+          transform: scale(1.05);
+          border-radius: 13px;
+        }
       }
     }
   }
+}
+
+.container__popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backDark;
+  z-index: 99;
+
+  &__close {
+    width: 30px;
+    height: 5px;
+    background-color: $backWhite;
+    border-radius: 2px;
+    position: relative;
+    top: 30px;
+    left: calc(100% - 50px);
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 5px;
+      background-color: $backWhite;
+      border-radius: 2px;
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: $active;
+
+      &::after {
+        background-color: $active;
+      }
+    }
+  }
+
+  &__contentbox {
+    width: 85%;
+    height: 85%;
+    background-color: $backWhite;
+    position: absolute;
+    top: calc(15% / 2);
+    left: calc(15% / 2);
+  }
+}
+
+.__popup-active {
+  display: block !important;
 }

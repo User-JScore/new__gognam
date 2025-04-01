@@ -7,11 +7,11 @@
     width: 100%;
     height: 100vh;
     background-image: url("../src/img/IMG_2113.JPG");
-    background-size: 180%;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation-name: home-background;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -24,11 +24,13 @@
 
       #design {
         line-height: 100%;
+        text-shadow: 15px 10px 15px $backDark;
       }
 
       #gongam {
         font-size: 13rem;
         line-height: 100%;
+        text-shadow: 15px 10px 25px $backDark;
       }
     }
   }
@@ -88,7 +90,7 @@
     min-height: 600px;
     max-height: 1100px;
     background-image: url("../src/img/IMG_2121.JPG");
-    background-size: 160%;
+    background-size: 140%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation-name: projects-background;
@@ -101,7 +103,7 @@
       width: 100%;
       height: 100%;
       backdrop-filter: blur(5px) grayscale(0.5);
-      padding: 20px 0;
+      padding: 0px 0;
 
       &__wrapper {
         overflow-y: hidden !important;
@@ -220,6 +222,7 @@
 
       .swiper-slide-active {
         filter: grayscale(0);
+        box-shadow: -10px 10px 20px $backDarkTr;
       }
 
       .swiper-button-next,
@@ -252,7 +255,7 @@
 
   &__contact {
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: $backWhite;
     position: relative;
     padding: 20px 20px 20px 140px;
@@ -261,7 +264,7 @@
       position: absolute;
       top: 20px;
       left: 40px;
-      width: 660px;
+      width: 560px;
       height: 100px;
       color: $backDarkTr;
       transform: rotate(90deg) translateX(-100px);
@@ -283,17 +286,17 @@
     &__contentbox {
       .__contact__map {
         width: 100%;
-        height: 660px;
+        height: 560px;
         position: relative;
 
         &__info {
           position: absolute;
-          top: 20%;
+          top: 25%;
           left: 10px;
           background-color: white;
           border-radius: 2px;
-          width: 284px;
-          height: 12%;
+          width: 283px;
+          height: 13%;
           display: flex;
           flex-direction: column;
           align-items: start;
@@ -306,10 +309,16 @@
             color: black;
             display: flex;
             align-items: center;
+            transition: all 0.3s;
 
             span {
               font-size: 1.3rem;
               margin-right: 5px;
+            }
+
+            &:hover {
+              color: $active;
+              border-bottom: 0.1px solid $active;
             }
           }
 
@@ -326,12 +335,39 @@
             left: 82%;
             border-left: 1px solid $backDark;
 
+            div {
+              cursor: pointer;
+            }
+
             &__insta {
               width: 1.3rem;
+
+              #SVGRepo_iconCarrier {
+                stroke: $backDark;
+                fill: none;
+                transition: all 0.15s;
+              }
+
+              &:hover {
+                #SVGRepo_iconCarrier {
+                  stroke: $active;
+                }
+              }
             }
 
             &__naver {
               width: 1.25rem;
+
+              #SVGRepo_iconCarrier {
+                fill: $backDark;
+                transition: all 0.15s;
+              }
+
+              &:hover {
+                #SVGRepo_iconCarrier {
+                  fill: $active;
+                }
+              }
             }
           }
         }
