@@ -14,7 +14,7 @@ let swiper = new Swiper(".container__main__projects__swiper", {
   freeMode: true,
   autoplay: {
     delay: 3000,
-    pauseOnMouseEnter: true,
+    // pauseOnMouseEnter: true,
   },
   slidesPerView: 1.4,
   centeredSlides: true,
