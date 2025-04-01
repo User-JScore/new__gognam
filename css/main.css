@@ -20,11 +20,11 @@
   color: rgb(255, 248, 235);
 }
 .container__main__home__titlebox #design {
-  line-height: 65%;
+  line-height: 100%;
 }
 .container__main__home__titlebox #gongam {
-  font-size: 5.7rem;
-  line-height: 65%;
+  font-size: 13rem;
+  line-height: 100%;
 }
 .container__main__about {
   width: 100%;
@@ -50,7 +50,7 @@
 .container__main__about__titlebox .__about__title_2 {
   text-align: end;
   font-size: 4rem;
-  line-height: 1%;
+  line-height: 50%;
 }
 .container__main__about__contentbox {
   width: calc(100% - 130px);
@@ -332,7 +332,7 @@
 .container__main__footer__menubox a {
   color: rgb(255, 248, 235);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .container__main__footer__copy {
   position: absolute;

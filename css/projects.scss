@@ -1,5 +1,9 @@
 @import "_var.scss";
 
+.container__header__projects {
+  background-color: $backDarkTr;
+}
+
 .container__projects__main {
   &__portfolio {
     width: 100%;

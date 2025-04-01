@@ -1,3 +1,7 @@
+.container__header__projects {
+  background-color: rgba(59, 64, 87, 0.5);
+}
+
 .container__projects__main__portfolio {
   width: 100%;
   position: relative;
