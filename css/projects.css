@@ -14,10 +14,19 @@
   position: fixed;
   border-right: 1px solid rgb(59, 64, 87);
 }
+.container__projects__main__portfolio__nav li {
+  width: 100%;
+  height: 30px;
+}
 .container__projects__main__portfolio__nav a {
   font-size: 1.2rem;
   text-decoration: none;
   color: rgb(59, 64, 87);
+  transition: all 0.3s;
+}
+.container__projects__main__portfolio__nav a:hover {
+  color: aqua;
+  font-size: 1.4rem;
 }
 .container__projects__main__portfolio__contentbox {
   position: relative;

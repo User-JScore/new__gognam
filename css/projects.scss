@@ -18,10 +18,21 @@
       position: fixed;
       border-right: 1px solid $backDark;
 
+      li {
+        width: 100%;
+        height: 30px;
+      }
+
       a {
         font-size: 1.2rem;
         text-decoration: none;
         color: $backDark;
+        transition: all 0.3s;
+
+        &:hover {
+          color: aqua;
+          font-size: 1.4rem;
+        }
       }
     }
 
