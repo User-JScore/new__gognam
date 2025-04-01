@@ -19,8 +19,8 @@ body {
   &__header {
     width: 100%;
     height: 80px;
-    backdrop-filter: blur(5px) grayscale(0.3);
-    border-bottom: 1px solid $backWhite;
+    backdrop-filter: blur(5px) grayscale(0.5);
+    border-bottom: 1px solid $backDark;
     padding: 0 10px;
     display: flex;
     flex-direction: row;
@@ -30,7 +30,6 @@ body {
     top: 0;
     left: 0;
     z-index: 99;
-    mix-blend-mode: difference;
 
     &__logobox {
       background-image: url("../src/logo.webp");
@@ -73,7 +72,7 @@ body {
             left: 0;
             width: 100%;
             height: 7px;
-            background-color: aqua;
+            background-color: $backWhite;
             border-radius: 4px 4px 0 0;
             transform: scaleY(0);
             transform-origin: bottom;
@@ -81,7 +80,7 @@ body {
           }
 
           a {
-            color: $backWhite;
+            color: $backDark;
             text-decoration: none;
             font-size: 1.2rem;
             transition: all 0.3s;
@@ -93,7 +92,7 @@ body {
             }
 
             a {
-              color: aqua;
+              color: $backWhite;
               font-size: 1.4rem;
             }
           }
@@ -112,11 +111,16 @@ body {
       &__insta {
         width: 30px;
         cursor: pointer;
-        transition: all 0.3s;
+
+        #SVGRepo_iconCarrier {
+          stroke: $backDark;
+          fill: none;
+          transition: all 0.15s;
+        }
 
         &:hover {
           #SVGRepo_iconCarrier {
-            stroke: aqua;
+            stroke: $backWhite;
           }
         }
       }
@@ -124,11 +128,15 @@ body {
       &__naver {
         width: 25px;
         cursor: pointer;
-        transition: all 0.3s;
+
+        #SVGRepo_iconCarrier {
+          fill: $backDark;
+          transition: all 0.15s;
+        }
 
         &:hover {
           #SVGRepo_iconCarrier {
-            fill: aqua;
+            fill: $backWhite;
           }
         }
       }
@@ -141,18 +149,33 @@ body {
     left: calc(100% - 70px);
     width: 50px;
     height: 50px;
-    backdrop-filter: blur(5px) grayscale(0.3);
-    border: 1px solid $backWhite;
+    backdrop-filter: blur(5px) grayscale(0.7);
+    border: 1px solid $backDark;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
     z-index: 99;
-    mix-blend-mode: difference;
+    transition: all 0.3s;
+
+    #SVGRepo_iconCarrier {
+      stroke: $backDark;
+      fill: $backDark;
+    }
 
     svg {
       width: 35px;
+    }
+
+    &:hover {
+      background-color: $backDarkTr;
+      border: 1px solid $backWhite;
+
+      #SVGRepo_iconCarrier {
+        stroke: $backWhite;
+        fill: $backWhite;
+      }
     }
   }
 }

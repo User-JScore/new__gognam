@@ -281,100 +281,60 @@
     }
 
     &__contentbox {
-      display: flex;
-
-      .__contact__form {
-        width: 40%;
+      .__contact__map {
+        width: 100%;
         height: 660px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        position: relative;
 
         &__info {
-          border: 2px solid $backDarkTr;
-          border-radius: 20px;
-          margin-right: 20px;
-          padding: 5px;
-          box-shadow: -10px 5px 10px $backDarkTr;
-          backdrop-filter: blur(10px);
+          position: absolute;
+          top: 20%;
+          left: 10px;
+          background-color: white;
+          border-radius: 2px;
+          width: 284px;
+          height: 12%;
           display: flex;
           flex-direction: column;
-          justify-content: start;
-          gap: 10px;
+          align-items: start;
+          justify-content: space-around;
+          padding: 10px;
 
           a {
-            display: block;
-            color: $backDark;
             text-decoration: none;
-            font-size: 1.2rem;
+            display: block;
+            color: black;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 1.3rem;
+              margin-right: 5px;
+            }
           }
 
           &__media {
-            display: flex;
-            gap: 30px;
-            &__insta,
-            &__naver {
-              width: 40px;
-              height: 40px;
-              cursor: pointer;
-              display: inline-flex;
-              align-items: center;
-              justify-content: center;
-            }
-
-            &__naver {
-              width: 35px;
-            }
-          }
-        }
-
-        &__box {
-          display: flex;
-          flex-direction: column;
-          color: $backDark;
-          backdrop-filter: blur(10px);
-          border: 2px solid $backDarkTr;
-          border-radius: 20px;
-          margin-right: 20px;
-          padding: 5px;
-          height: 55%;
-          box-shadow: -10px 5px 10px $backDarkTr;
-
-          h1 {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-          }
-
-          form {
+            width: 50px;
+            height: 80%;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            position: absolute;
+            top: 10%;
+            left: 82%;
+            border-left: 1px solid $backDark;
 
-            label {
-              display: flex;
-              flex-direction: column;
-              gap: 5px;
-              font-size: 1.1rem;
+            &__insta {
+              width: 1.3rem;
+            }
 
-              input,
-              textarea {
-                background-color: $backDarkTr;
-                color: $backWhite;
-                height: 25px;
-              }
-
-              textarea {
-                height: 60px;
-              }
+            &__naver {
+              width: 1.25rem;
             }
           }
         }
-      }
-
-      .__contact__map {
-        width: 60%;
-        height: 660px;
 
         iframe {
           border-radius: 20px;
@@ -396,9 +356,9 @@
     &__logobox {
       background-image: url("../src/logo.webp");
       background-position: left center;
-      background-size: 30%;
+      background-size: 60px;
       background-repeat: no-repeat;
-      width: 30%;
+      width: 38%;
       height: 100%;
       opacity: 0.5;
 
@@ -414,10 +374,10 @@
     }
 
     &__menubox {
-      width: 70%;
+      width: 62%;
       height: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       gap: 30px;
       opacity: 0.5;
