@@ -1,4 +1,5 @@
 @import "_var.scss";
+@import "_fonts.scss";
 
 .container__header__projects {
   background-color: $backDarkTr;
@@ -32,6 +33,7 @@
         &:hover {
           color: $active;
           font-size: 1.4rem;
+          font-family: "second";
         }
       }
     }

@@ -6,7 +6,6 @@ const projectsList = document.querySelectorAll(
 
 projectsList.forEach((project) => {
   project.addEventListener("click", () => {
-    console.log(popup);
     popup.classList.toggle("__popup-active");
   });
 });
@@ -14,3 +13,19 @@ projectsList.forEach((project) => {
 closeButton.addEventListener("click", () => {
   popup.classList.toggle("__popup-active");
 });
+
+const dirs = [
+  "1-1",
+  "1-2",
+  "1-3",
+  "1-4",
+  "1-5",
+  "2-1",
+  "2-2",
+  "3-1",
+  "3-2",
+  "3-3",
+  "4-1",
+  "4-2",
+  "4-3",
+];

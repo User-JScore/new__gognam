@@ -1,4 +1,5 @@
 @import "_var.scss";
+@import "_fonts.scss";
 @import "contentbox";
 
 * {
@@ -6,8 +7,7 @@
   margin: 0;
   inset: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 100;
+  font-family: "first";
 }
 
 body {
@@ -32,14 +32,26 @@ body {
     z-index: 99;
 
     &__logobox {
-      background-image: url("../src/logo.webp");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
       width: 100px;
       height: calc(100% - 20px);
       cursor: pointer;
       margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+
+      .cls-2,
+      .cls-3 {
+        fill: $backDark;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        .cls-2,
+        .cls-3 {
+          fill: $active;
+        }
+      }
     }
 
     &__menu {
@@ -76,7 +88,7 @@ body {
             border-radius: 4px 4px 0 0;
             transform: scaleY(0);
             transform-origin: bottom;
-            transition: transform 0.5s;
+            transition: all 0.5s;
           }
 
           a {
@@ -89,11 +101,14 @@ body {
           &:hover {
             &::after {
               transform: scale(1);
+              box-shadow: 0 0 10px $backDarkTr;
             }
 
             a {
               color: $active;
               font-size: 1.4rem;
+              font-family: "second";
+              text-shadow: 0 0 10px $backDarkTr;
             }
           }
         }

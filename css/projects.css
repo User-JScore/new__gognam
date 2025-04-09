@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "first";
+  src: url("./fonts/PRETENDARD-LIGHT.OTF") format("opentype");
+}
+@font-face {
+  font-family: "second";
+  src: url("./fonts/PRETENDARD-BOLD.OTF") format("opentype");
+}
+@font-face {
+  font-family: "third";
+  src: url("./fonts/PRETENDARD-SEMIBOLD.OTF") format("opentype");
+}
 .container__header__projects {
   background-color: rgba(59, 64, 87, 0.5);
 }
@@ -27,6 +39,7 @@
 .container__projects__main__portfolio__nav a:hover {
   color: rgb(173, 26, 26);
   font-size: 1.4rem;
+  font-family: "second";
 }
 .container__projects__main__portfolio__contentbox {
   position: relative;
