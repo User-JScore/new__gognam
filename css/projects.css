@@ -16,6 +16,7 @@
 
 .container__projects__main__portfolio {
   width: 100%;
+  min-height: calc(100vh - 110px);
   position: relative;
 }
 .container__projects__main__portfolio__nav {

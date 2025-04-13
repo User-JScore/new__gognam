@@ -22,13 +22,17 @@
 
       #design {
         line-height: 100%;
-        text-shadow: 15px 10px 15px $backDark;
+        text-shadow: 10px 5px 10px $backDark;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100;
       }
 
       #gongam {
-        font-size: 13rem;
+        font-size: 5.9rem;
         line-height: 100%;
-        text-shadow: 15px 10px 25px $backDark;
+        text-shadow: 15px 10px 15px $backDark;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
       }
     }
   }
@@ -51,14 +55,22 @@
       opacity: 0.4;
 
       .__about__title_1 {
-        text-align: start;
+        text-align: end;
         font-size: 5rem;
+        line-height: 90%;
+        writing-mode: sideways-lr;
       }
 
       .__about__title_2 {
         text-align: end;
         font-size: 4rem;
-        line-height: 50%;
+        line-height: 85%;
+        width: 480px;
+        height: 60px;
+        writing-mode: sideways-lr;
+        position: absolute;
+        top: calc(100% - 35px);
+        left: calc(100% - 480px);
       }
     }
 
@@ -201,7 +213,7 @@
         }
 
         #slide-3 {
-          background-image: url("../src/img/IMG_2103\ \(1\).JPG");
+          background-image: url("../src/img/IMG_2103.JPG");
         }
 
         #slide-4 {
@@ -270,14 +282,22 @@
       opacity: 0.4;
 
       .__contact__title_1 {
-        text-align: start;
+        text-align: center;
         font-size: 5rem;
+        line-height: 95%;
+        writing-mode: sideways-lr;
       }
 
       .__contact__title_2 {
-        text-align: end;
+        text-align: start;
         font-size: 3rem;
-        line-height: 1%;
+        line-height: 100%;
+        height: 30px;
+        width: 190px;
+        writing-mode: sideways-lr;
+        position: absolute;
+        top: 100%;
+        left: calc(100% - 190px);
       }
     }
 

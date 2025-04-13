@@ -31,12 +31,16 @@
 }
 .container__main__home__titlebox #design {
   line-height: 100%;
-  text-shadow: 15px 10px 15px rgb(59, 64, 87);
+  text-shadow: 10px 5px 10px rgb(59, 64, 87);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
 }
 .container__main__home__titlebox #gongam {
-  font-size: 13rem;
+  font-size: 5.9rem;
   line-height: 100%;
-  text-shadow: 15px 10px 25px rgb(59, 64, 87);
+  text-shadow: 15px 10px 15px rgb(59, 64, 87);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
 }
 .container__main__about {
   width: 100%;
@@ -56,13 +60,21 @@
   opacity: 0.4;
 }
 .container__main__about__titlebox .__about__title_1 {
-  text-align: start;
+  text-align: end;
   font-size: 5rem;
+  line-height: 90%;
+  writing-mode: sideways-lr;
 }
 .container__main__about__titlebox .__about__title_2 {
   text-align: end;
   font-size: 4rem;
-  line-height: 50%;
+  line-height: 85%;
+  width: 480px;
+  height: 60px;
+  writing-mode: sideways-lr;
+  position: absolute;
+  top: calc(100% - 35px);
+  left: calc(100% - 480px);
 }
 .container__main__about__contentbox {
   width: calc(100% - 130px);
@@ -189,7 +201,7 @@
   background-image: url("../src/img/IMG_2102.JPG");
 }
 .container__main__projects__swiper__wrapper #slide-3 {
-  background-image: url("../src/img/IMG_2103 (1).JPG");
+  background-image: url("../src/img/IMG_2103.JPG");
 }
 .container__main__projects__swiper__wrapper #slide-4 {
   background-image: url("../src/img/IMG_2104.JPG");
@@ -245,13 +257,21 @@
   opacity: 0.4;
 }
 .container__main__contact__titlebox .__contact__title_1 {
-  text-align: start;
+  text-align: center;
   font-size: 5rem;
+  line-height: 95%;
+  writing-mode: sideways-lr;
 }
 .container__main__contact__titlebox .__contact__title_2 {
-  text-align: end;
+  text-align: start;
   font-size: 3rem;
-  line-height: 1%;
+  line-height: 100%;
+  height: 30px;
+  width: 190px;
+  writing-mode: sideways-lr;
+  position: absolute;
+  top: 100%;
+  left: calc(100% - 190px);
 }
 .container__main__contact__contentbox .__contact__map {
   width: 100%;

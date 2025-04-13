@@ -8,6 +8,7 @@
 .container__projects__main {
   &__portfolio {
     width: 100%;
+    min-height: calc(100vh - 110px);
     position: relative;
 
     &__nav {
@@ -110,6 +111,7 @@
 
   &__contentbox {
     width: 85%;
+
     height: 85%;
     // background-color: $backWhite;
     position: absolute;

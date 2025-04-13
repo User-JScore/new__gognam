@@ -1,28 +1,27 @@
 const fs = require("fs").promises;
 const path = require("path");
-const { pathToFileURL } = require("url");
 
 async function readProjects() {
   try {
-    const projectsDirs = JSON.stringify(
-      await fs.readdir("../src/projects"),
-      null
-    );
-    console.log(projectsDirs);
-    await fs.writeFile("projectsDirs", projectsDirs);
-    console.log("File Written");
+    const projectsPath = path.join(__dirname, "../src/projects");
+    const projectsDirs = await fs.readdir(projectsPath);
+
+    const jsonProjectsDirs = JSON.stringify(projectsDirs, null, 2);
+    await fs.writeFile("./json/projectsDirs", jsonProjectsDirs);
+
+    for (const dir of projectsDirs) {
+      try {
+        const fullDirPath = path.join(projectsPath, dir);
+        const projectPhotos = await fs.readdir(fullDirPath);
+        const jsonProjectPhotos = JSON.stringify(projectPhotos, null, 2);
+        await fs.writeFile(`./json/${dir}`, jsonProjectPhotos);
+      } catch (err) {
+        console.error(`Ошибка при чтении папки ${dir}:`, err);
+      }
+    }
   } catch (err) {
-    console.log(err);
+    console.error("Ошибка при чтении проекта:", err);
   }
 }
 
 readProjects();
-
-async function readPhotos() {
-  try {
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-readPhotos();
