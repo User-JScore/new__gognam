@@ -22,9 +22,6 @@
       li {
         width: 100%;
         height: 30px;
-      }
-
-      a {
         font-size: 1.2rem;
         text-decoration: none;
         color: $backDark;
@@ -51,7 +48,6 @@
       div {
         width: calc(95% / 2);
         height: 40vh;
-        background-image: url("../src/img/IMG_2113.JPG");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -77,7 +73,8 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: $backDark;
+  background-color: $backDarkTr;
+  backdrop-filter: blur(5px);
   z-index: 99;
 
   &__close {
@@ -114,10 +111,30 @@
   &__contentbox {
     width: 85%;
     height: 85%;
-    background-color: $backWhite;
+    // background-color: $backWhite;
     position: absolute;
     top: calc(15% / 2);
     left: calc(15% / 2);
+
+    &__slides {
+      width: 85vh;
+      height: 85vw;
+      transform: rotate(-90deg) translateX(-85vh);
+      transform-origin: left top;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      &__item {
+        width: 85vw;
+        height: 85vh;
+        margin-bottom: calc(85vw - 85vh);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(90deg) translateY(-85vh);
+        transform-origin: left top;
+      }
+    }
   }
 }
 

@@ -29,14 +29,12 @@
 .container__projects__main__portfolio__nav li {
   width: 100%;
   height: 30px;
-}
-.container__projects__main__portfolio__nav a {
   font-size: 1.2rem;
   text-decoration: none;
   color: rgb(59, 64, 87);
   transition: all 0.3s;
 }
-.container__projects__main__portfolio__nav a:hover {
+.container__projects__main__portfolio__nav li:hover {
   color: rgb(173, 26, 26);
   font-size: 1.4rem;
   font-family: "second";
@@ -54,7 +52,6 @@
 .container__projects__main__portfolio__contentbox div {
   width: 47.5%;
   height: 40vh;
-  background-image: url("../src/img/IMG_2113.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +73,9 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(59, 64, 87);
+  background-color: rgba(59, 64, 87, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 99;
 }
 .container__popup__close {
@@ -109,10 +108,27 @@
 .container__popup__contentbox {
   width: 85%;
   height: 85%;
-  background-color: rgb(255, 248, 235);
   position: absolute;
   top: 7.5%;
   left: 7.5%;
+}
+.container__popup__contentbox__slides {
+  width: 85vh;
+  height: 85vw;
+  transform: rotate(-90deg) translateX(-85vh);
+  transform-origin: left top;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container__popup__contentbox__slides__item {
+  width: 85vw;
+  height: 85vh;
+  margin-bottom: calc(85vw - 85vh);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg) translateY(-85vh);
+  transform-origin: left top;
 }
 
 .__popup-active {
