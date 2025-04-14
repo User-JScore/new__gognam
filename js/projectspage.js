@@ -38,7 +38,7 @@ closeButton.addEventListener("click", () => {
 });
 
 // Загрузка проектов
-fetch("./json/projectsDirs")
+fetch("./js/json/projectsDirs")
   .then((response) => response.json())
   .then((json) => {
     baseProjects = json;
