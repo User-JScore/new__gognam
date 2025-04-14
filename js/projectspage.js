@@ -71,7 +71,7 @@ sort.forEach((sortItem, count) => {
 
 // Загрузка фото в popup
 function loadPhotos(projectDir) {
-  fetch(`../js/json/${projectDir}`)
+  fetch(`./js/json/${projectDir}`)
     .then((res) => res.json())
     .then((photos) => {
       projectSlider.innerHTML = ""; // Очищаем предыдущие слайды
