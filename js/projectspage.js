@@ -53,7 +53,7 @@ function renderProjects(projects) {
   for (const project of projects) {
     const card = document.createElement("div");
     card.className = "container__projects__main__portfolio__contentbox__item";
-    card.style.backgroundImage = `url("../src/projects/${project}/1.webp")`;
+    card.style.backgroundImage = `url("./src/projects/${project}/1.webp")`;
     projectsListContainer.appendChild(card);
   }
 }
@@ -79,7 +79,7 @@ function loadPhotos(projectDir) {
       photos.forEach((photo) => {
         const slide = document.createElement("div");
         slide.className = "container__popup__contentbox__slides__item";
-        slide.style.backgroundImage = `url("../src/projects/${projectDir}/${photo}")`;
+        slide.style.backgroundImage = `url("./src/projects/${projectDir}/${photo}")`;
         projectSlider.appendChild(slide);
       });
     })
