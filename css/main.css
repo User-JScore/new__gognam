@@ -137,6 +137,7 @@
   font-size: 2rem;
   font-weight: 600;
   transition: color 0.3s;
+  mix-blend-mode: difference;
 }
 .container__main__projects__swiper__wrapper__slide__titlebox p {
   opacity: 0;
@@ -195,19 +196,25 @@
   opacity: 1;
 }
 .container__main__projects__swiper__wrapper #slide-1 {
-  background-image: url("../src/img/IMG_2101.JPG");
+  background-image: url("../src/projects/2-3/1.webp");
 }
 .container__main__projects__swiper__wrapper #slide-2 {
-  background-image: url("../src/img/IMG_2102.JPG");
+  background-image: url("../src/projects/2-2/KakaoTalk_20240924_091039821.webp");
 }
 .container__main__projects__swiper__wrapper #slide-3 {
-  background-image: url("../src/img/IMG_2103.JPG");
+  background-image: url("../src/projects/2-1/1.webp");
 }
 .container__main__projects__swiper__wrapper #slide-4 {
-  background-image: url("../src/img/IMG_2104.JPG");
+  background-image: url("../src/projects/3-1/250210_js2_446.webp");
 }
 .container__main__projects__swiper__wrapper #slide-5 {
-  background-image: url("../src/img/IMG_2105.JPG");
+  background-image: url("../src/projects/3-2/1.webp");
+}
+.container__main__projects__swiper__wrapper #slide-6 {
+  background-image: url("../src/projects/3-3/KakaoTalk_20240924_091003321_01.webp");
+}
+.container__main__projects__swiper__wrapper #slide-7 {
+  background-image: url("../src/projects/4-3/1.webp");
 }
 .container__main__projects__swiper .swiper-slide {
   filter: grayscale(80) blur(5px);
@@ -487,11 +494,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
+  transition: transform 0.3s;
 }
 .container__header__logobox .cls-2,
 .container__header__logobox .cls-3 {
   fill: rgb(59, 64, 87);
   transition: all 0.3s;
+}
+.container__header__logobox:hover {
+  transform: scale(1.2);
 }
 .container__header__logobox:hover .cls-2,
 .container__header__logobox:hover .cls-3 {
@@ -560,11 +571,15 @@ body {
 .container__header__mediabox__insta {
   width: 30px;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 .container__header__mediabox__insta #SVGRepo_iconCarrier {
   stroke: rgb(59, 64, 87);
   fill: none;
   transition: all 0.15s;
+}
+.container__header__mediabox__insta:hover {
+  transform: scale(1.2);
 }
 .container__header__mediabox__insta:hover #SVGRepo_iconCarrier {
   stroke: rgb(173, 26, 26);
@@ -572,10 +587,14 @@ body {
 .container__header__mediabox__naver {
   width: 25px;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 .container__header__mediabox__naver #SVGRepo_iconCarrier {
   fill: rgb(59, 64, 87);
   transition: all 0.15s;
+}
+.container__header__mediabox__naver:hover {
+  transform: scale(1.2);
 }
 .container__header__mediabox__naver:hover #SVGRepo_iconCarrier {
   fill: rgb(173, 26, 26);

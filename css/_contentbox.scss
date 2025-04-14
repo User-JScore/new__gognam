@@ -137,6 +137,7 @@
               font-size: 2rem;
               font-weight: 600;
               transition: color 0.3s;
+              mix-blend-mode: difference;
             }
 
             p {
@@ -205,23 +206,31 @@
         }
 
         #slide-1 {
-          background-image: url("../src/img/IMG_2101.JPG");
+          background-image: url("../src/projects/2-3/1.webp");
         }
 
         #slide-2 {
-          background-image: url("../src/img/IMG_2102.JPG");
+          background-image: url("../src/projects/2-2/KakaoTalk_20240924_091039821.webp");
         }
 
         #slide-3 {
-          background-image: url("../src/img/IMG_2103.JPG");
+          background-image: url("../src/projects/2-1/1.webp");
         }
 
         #slide-4 {
-          background-image: url("../src/img/IMG_2104.JPG");
+          background-image: url("../src/projects/3-1/250210_js2_446.webp");
         }
 
         #slide-5 {
-          background-image: url("../src/img/IMG_2105.JPG");
+          background-image: url("../src/projects/3-2/1.webp");
+        }
+
+        #slide-6 {
+          background-image: url("../src/projects/3-3/KakaoTalk_20240924_091003321_01.webp");
+        }
+
+        #slide-7 {
+          background-image: url("../src/projects/4-3/1.webp");
         }
       }
 

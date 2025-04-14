@@ -127,9 +127,9 @@
       overflow-y: scroll;
 
       &__item {
-        width: 85vw;
+        width: 55vw;
         height: 85vh;
-        margin-bottom: calc(85vw - 85vh);
+        margin-bottom: calc(55vw - 85vh);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

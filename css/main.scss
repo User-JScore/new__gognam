@@ -39,6 +39,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: start;
+      transition: transform 0.3s;
 
       .cls-2,
       .cls-3 {
@@ -47,6 +48,7 @@ body {
       }
 
       &:hover {
+        transform: scale(1.2);
         .cls-2,
         .cls-3 {
           fill: $active;
@@ -126,6 +128,7 @@ body {
       &__insta {
         width: 30px;
         cursor: pointer;
+        transition: transform 0.3s;
 
         #SVGRepo_iconCarrier {
           stroke: $backDark;
@@ -134,6 +137,8 @@ body {
         }
 
         &:hover {
+          transform: scale(1.2);
+
           #SVGRepo_iconCarrier {
             stroke: $active;
           }
@@ -143,6 +148,7 @@ body {
       &__naver {
         width: 25px;
         cursor: pointer;
+        transition: transform 0.3s;
 
         #SVGRepo_iconCarrier {
           fill: $backDark;
@@ -150,6 +156,8 @@ body {
         }
 
         &:hover {
+          transform: scale(1.2);
+
           #SVGRepo_iconCarrier {
             fill: $active;
           }
